@@ -1,0 +1,7 @@
+.banner {
+  z-index: -200;
+}
+.banner img {
+  width: 100%;
+  z-index: -100;
+}

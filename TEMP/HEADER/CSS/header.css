@@ -1,0 +1,56 @@
+.header {
+  display: flex;
+  height: 90px;
+  width: 100%;
+  font-family: 'Alegreya-Sans';
+  font-weight: normal;
+  font-style: normal;
+  background-color: var(--light-primary-color);
+  box-shadow: 0px 5px 6px 0px #888;
+  z-index: 2;
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--light-primary-color);
+}
+
+.header__logo {
+  display: flex;
+  font-family: 'Alegreya-Sans-Black';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;
+  align-items: center;
+  color: var(--accent-color);
+  width: 200px;
+  justify-content: center;
+}
+
+.header__empty-element {
+  flex-grow: 1;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.header__menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu__item {
+  margin-right: 1.3em;
+  word-wrap: none;
+  min-width: 70px;
+}
+
+.header__phones {
+  display: flex;
+  align-items: center;
+  font-size: 1.75em;
+  width: 250px;
+  justify-content: center;
+}
