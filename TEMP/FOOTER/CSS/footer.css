@@ -1,0 +1,56 @@
+.footer {
+  background: var(--dark-primary-color);
+  height: 12em;
+  width:100%;
+  color: var(--divider-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2em;
+  box-sizing: border-box;
+}
+
+.footer__menu ul {
+  list-style: none;
+}
+
+.footer__menu__item a {
+  color: var(--divider-color);
+}
+
+.footer__menu__item a:hover {
+  color: var(--accent-color);
+}
+
+.footer__empty {
+  flex-grow: 1;
+  margin-right: 2em;
+}
+
+.footer__social {
+  display: flex;
+  width: 4em;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2.5em;
+  margin-right: 2em;
+}
+
+.footer__social a {
+  color: var(--divider-color);
+}
+
+.footer__social a:hover {
+  color: var(--accent-color);
+}
+
+.footer__contacts {
+  margin-right: 2em;
+}
+
+.footer__bankrec {
+  margin-right: 3em;
+}
+.footer__unp {
+  margin-right: 3em;
+}

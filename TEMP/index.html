@@ -2,14 +2,19 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/colors.css">
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/fonts.css">
     <link rel="stylesheet" href="/CSS/index.css">
     <link rel="stylesheet" href="/HEADER/CSS/header.css">
     <link rel="stylesheet" href="/BANNER/css/banner.css">
+    <link rel="stylesheet" href="/CATALOG/CSS/catalog.css">
+    <link rel="stylesheet" href="/FOOTER/CSS/footer.css">
     <title>TRIKSHOP.BY - Беллоруский трикотаж купить Брест</title>
 </head>
 <body>
@@ -18,48 +23,79 @@
             LOGO
         </div>
         <div class="header__empty-element">
-          
+
         </div>
         <div class="header__menu">
           
             <ul>
                 <li class="header__menu__item">
-                    Главная
+                    <a href="#">Главная</a> 
                 </li>
                 <li class="header__menu__item">
-                    Каталог
+                    <a href="#catalog">Каталог</a>
                 </li>
                 <li class="header__menu__item">
-                    О нас
+                    <a href="#us">О нас</a> 
                 </li>
                 <li class="header__menu__item">
-                    Оплата
+                    <a href="#payment">Оплата</a>
                 </li>
                 <li class="header__menu__item">
-                    Доставка
+                    <a href="#dilivery">Доставка</a>
                 </li>
                 <li class="header__menu__item">
-                    Контакты
+                    <a href="#contacts">Контакты</a>
                 </li>
             </ul>
         </div>
         <div class="header__social">
-
+            <a href=""><i class="fab fa-instagram"></i></a> 
+            <a href=""><i class="fab fa-vk"></i></a> 
+            <a href=""><i class="fab fa-odnoklassniki"></i></a> 
         </div>
         <div class="header__phones">
             +375292009303
         </div>
     </div>
+    <div class="banner__margin">
 
+    </div>
     <div class="banner">
-        <img src="/BANNER/IMGS/баннер 2369.jpg" alt="Баннер" class="banner__img" 
+        
+    </div>
+    <a href="" name='catalog'></a>
+    <div class="catalog">
+        <div class="catalog__circles">
+          <div class="catalog__circle catalog__circle__selected"></div>
+          <div class="catalog__circle"></div>
+          <div class="catalog__circle"></div>
+        </div>
+        <div class="catalog__models">
+          <div class="catalog__arrow catalog__arrow_left">
+              <i class="fas fa-angle-left"></i>
+          </div>
+          <div class="catalog__items">
+            <div class="catalog__item">
+            </div>
+            <div class="catalog__item"></div>
+            <div class="catalog__item"></div>
+          </div>
+          <div class="catalog__arrow catalog__arrow_right">
+              <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+        
+        <div class='catalog__link'>
+          <a href="#">Больше моделей в каталоге</a>
+        </div>
     </div>
 
-    <div class="catalog">
-        <div class="catalog__item"><img src="" alt="Модель 1" class="catalog__item__img"></div>
-        <div class="catalog__item"><img src="" alt="Модель 2" class="catalog__item__img"></div>
-        <div class="catalog__item"><img src="" alt="Модель 3" class="catalog__item__img"></div>
+    <div class="delivery">
+        <div class="delivery__data">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum blanditiis laboriosam minus, dignissimos dolore nostrum vero adipisci repellat at ipsam enim reprehenderit.
+        </div>
     </div>
+
 
     <div class="us">
         <article class="us__text">
@@ -67,9 +103,11 @@
         </article>
     </div>
 
+
+
     <div class="contacts">
         <article class="contacts__numbers">
-            Phones: +37529 2009 303
+            Phones: +375 29 2009 303
 
         </article>
         <div class="contacts__social">
@@ -85,30 +123,42 @@
         </div>
     </div>
 
-    <div class="delivery">
-        <div class="delivery__data">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat eum blanditiis laboriosam minus, dignissimos dolore nostrum vero adipisci repellat at ipsam enim reprehenderit.
-        </div>
-    </div>
+
 
     <footer class="footer">
         <nav class="footer__menu">
             <ul>
-                <li class="footer__menu__item">Главная</li>
-                <li class="footer__menu__item">Каталог</li>
-                <li class="footer__menu__item">О нас</li>
-                <li class="footer__menu__item">Оплата</li>
-                <li class="footer__menu__item">Доставка</li>
-                <li class="footer__menu__item">Контакты</li>
+                <li class="footer__menu__item"><a href="#">Главная</a></li>
+                <li class="footer__menu__item"><a href="#catalog">Каталог</a></li>
+                <li class="footer__menu__item"><a href="#us">О нас</a></li>
+                <li class="footer__menu__item"><a href="#payment">Оплата</a></li>
+                <li class="footer__menu__item"><a href="#dilivery">Доставка</a></li>
+                <li class="footer__menu__item"><a href="#contacts">Контакты</a></li>
             </ul>
         </nav>
+        <div class="footer__empty"></div>
         <div class="footer__social">
-
+            <a href=""><i class="fab fa-instagram"></i></a> 
+            <a href=""><i class="fab fa-vk"></i></a> 
+            <a href=""><i class="fab fa-odnoklassniki"></i></a> 
         </div>
         <div class="footer__contacts">
-
+            <i>Телефоны:</i><br>
+            +375 29 2009 303<br>
+            +375 99 9999 999<br>
+            +375 162 5555 55<br>
+            <i>Время работы:</i><br> 
+            с 10.00 до 20.00 пн-сб<br>
+            <i>E-mail:</i> bel.trikshop@gmail.com<br>
         </div>
         <div class="footer__bankrec">
+            р/с 132156489464984<br>
+            ОАО "ЖирТрестБанк"<br>
+            БИК: 13213215<br>
+        </div>
+        <div class="footer__unp">
+            УНП: 12345678<br>
+            ИП Козак Д.М.<br>
 
         </div>
     </footer>
