@@ -4,8 +4,8 @@
   z-index: -10;
   height:calc(100% - 90px);
   background-image: url('/BANNER/IMGS/баннер 2369.jpg');
-  background-position: auto;
-  background-size: 100% 100%; 
+  background-position: 10% center;
+  background-size: auto 100%; 
 }
 
 .banner__margin {

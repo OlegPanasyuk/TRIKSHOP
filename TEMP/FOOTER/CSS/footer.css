@@ -3,7 +3,7 @@
   height: 12em;
   width:100%;
   color: var(--divider-color);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: space-between;
   padding-right: 2em;
