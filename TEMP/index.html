@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
@@ -29,7 +30,7 @@
         <div class="header__empty-element">
 
         </div>
-        <div class="header__menu">
+        <div class="header__menu header__menu_closed">
           
             <ul>
                 <li class="header__menu__item">
@@ -42,10 +43,7 @@
                     <a href="#us">О нас</a> 
                 </li>
                 <li class="header__menu__item">
-                    <a href="#payment">Оплата</a>
-                </li>
-                <li class="header__menu__item">
-                    <a href="#dilivery">Доставка</a>
+                    <a href="#payment">Оплата и Доставка</a>
                 </li>
                 <li class="header__menu__item">
                     <a href="#contacts">Контакты</a>
@@ -60,6 +58,9 @@
         <div class="header__phones">
             +375292009303
         </div>
+        <div class="header__menu_bar">
+          <i class="fas fa-bars"></i>
+        </div>
     </div>
     <div class="banner__margin">
 
@@ -70,9 +71,11 @@
     <a href="" name='catalog'></a>
     <div class="catalog">
         <div class="catalog__circles">
-          <div class="catalog__circle catalog__circle__selected"></div>
-          <div class="catalog__circle"></div>
-          <div class="catalog__circle"></div>
+          <div class="catalog__circles__wrap">
+            <div class="catalog__circle catalog__circle__selected"></div>
+            <div class="catalog__circle"></div>
+            <div class="catalog__circle"></div>
+          </div>
         </div>
         <div class="catalog__models">
           <div class="catalog__arrow catalog__arrow_left">
@@ -215,6 +218,11 @@
 
         </div>
     </footer>
+    
+    <script src="/JS/index.js"></script>
     <script src="/CATALOG/JS/catalog.js"></script>
+    <script src="/HEADER/JS/header.js"></script>
+    
+    <script src="/JS/device.js"></script>
 </body>
 </html>

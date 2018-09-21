@@ -2,7 +2,7 @@
   display: block;
   box-sizing: border-box;
   z-index: -10;
-  height:calc(100% - 90px);
+  height:calc(100% - var(--header-hieght));
   background-image: url('/BANNER/IMGS/баннер 2369.jpg');
   background-position: 10% center;
   background-size: auto 100%; 

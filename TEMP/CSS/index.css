@@ -13,6 +13,20 @@ html, body {
 a{
   text-decoration: none;
 }
+
+
+@media screen and (max-width: 770px) {
+  html,body {
+    font-size: 10px;
+  }
+}
+
+
+@media screen and (max-width: 1026px) {
+  html,body {
+    font-size: 14px;
+  }
+}
 /* html {
   overflow:hidden;
 } */

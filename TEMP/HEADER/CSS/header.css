@@ -1,9 +1,11 @@
-
+:root {
+  --header-hieght : 80px;
+}
 
 .header {
   display: flex;
   position: relative;
-  height: 5.625em;
+  height: var(--header-hieght);
   width: 100%;
   font-family: 'Alegreya-Sans';
   font-weight: normal;
@@ -47,13 +49,16 @@
 .header__menu__item {
   margin-right: 1.3em;
   word-wrap: none;
-  min-width: 3.5em;
+  
   
 }
 
 .header__menu__item a {
+  display: block;
   color: var(--primary-text-color);
-  padding: 5px 10px;
+  box-sizing: border-box;
+  padding: 5px 5px;
+  /* width: 100%; */
 }
 
 .header__menu__item a:hover {
@@ -85,12 +90,97 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 600px) {
+.header__menu_bar {
+  display: none;
+
+}
+@media screen and (max-width: 1026px) {
   .header__menu {
-    display: none; 
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  .header__menu__item {
+    margin: 10px 0 10px 0;
+    word-wrap: none;
+    
   }
 
-  .header__menu ul {
+  .header__menu__item a{
+    margin: 0;
+    padding: 10;
+  }
+}
+
+
+@media screen and (max-width: 770px) {
+  :root {
+    --header-hieght: 50px;
+  }
+
+  .header {
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .header__logo {
+    width: 120px
+  }
+
+  .header__menu {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: var(--header-hieght);
+    left: 0;
+    width: 80%;
+    height: auto;
+    background: var(--light-primary-color);
+    font-size: 1.5em;
+  }
+
+  .header__menu_closed {
     display: none;
+  }
+
+  .header__menu__item {
+    margin: 10px 0 10px 0;
+    word-wrap: none;
+    min-width: unset;
+  }
+
+  .header__menu__item a{
+    margin: 0;
+    padding: 10;
+  }
+
+
+  .header__menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header__phones {
+    display: none;
+  }
+
+  .header__social {
+    display: none;
+  }
+
+  .header__menu_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--primary-text-color);
+    width: 50px;
+    height: 50px;
+    font-size: 2em;
+    margin: 0 0 0 10px;
   }
 }

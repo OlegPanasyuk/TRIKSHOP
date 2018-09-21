@@ -35,13 +35,19 @@
   padding-top: 1em; 
 }
 
+.catalog__circles__wrap {
+  display: flex;
+  width: 7em;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .catalog__circle {
   content: ' ';
   width: 1.5em;
   height: 1.5em;
   background: var(--divider-color);
   border-radius: 50%;
-  margin-right: 2em;
 } 
 
 .catalog__circle:hover {
@@ -63,7 +69,7 @@
 }
 
 .catalog__item__img {
-  transition: background 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 
@@ -371,6 +377,7 @@
 
 .catalog__link a {
   transition: all 0.3s ease;
+  text-align: center;
   color: var(--secondary-text-color);
 }
 
@@ -381,4 +388,107 @@
 .catalog__link a:hover {
   transition: all 0.3s ease;
   color: var(--accent-color); 
+}
+
+@media screen and (max-width: 770px) and (orientation: portrait) {
+  .catalog__item {
+    width: 90%;
+  }
+
+  .catalog__arrow {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width: 770px) and (orientation: landscape) {
+  .catalog__circles {
+    height: 1.7em;
+  }
+
+  .catalog__circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .catalog__link {
+    height: 2em;
+    font-size: 1.5em;
+  }
+
+  .catalog__models {
+    display: flex;
+    height: calc(100% - 4em);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .catalog__circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .catalog__models {
+    display: flex;
+    height: calc(100% - 10em);
+  }
+
+  .catalog__circles {
+    height: 1.7em;
+  }
+
+  .catalog__link {
+    height: 3em;
+    font-size: 3em;
+  }
+
+  .catalog__item {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) and (orientation: landscape) {
+  .catalog__circles {
+    height: 2em;
+  }
+
+  .catalog__circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .catalog__link {
+    height: 2em;
+    font-size: 1.5em;
+  }
+
+  .catalog__models {
+    display: flex;
+    height: calc(100% - 4em);
+  }
+}
+
+
+@media screen and (max-width: 321px) {
+  .catalog__circle {
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .catalog__models {
+    display: flex;
+    height: calc(100% - 5em);
+  }
+
+  .catalog__circles {
+    height: 1.7em;
+  }
+
+  .catalog__link {
+    height: 2em;
+    font-size: 2em;
+  }
+
+  .catalog__item {
+    width: 100%;
+  }
 }
