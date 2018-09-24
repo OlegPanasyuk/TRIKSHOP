@@ -1,3 +1,16 @@
 .payment {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(var(--divider-color) 10%, var(--light-primary-color) 50%);
+}
+
+.payment__data {
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);  
 }
