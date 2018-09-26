@@ -16,17 +16,43 @@ a{
 
 
 @media screen and (max-width: 770px) {
+  
+}
+
+
+@media screen and (max-width: 1026px) {
+ 
+}
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html,body {
+    font-size: 14px;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
   html,body {
     font-size: 10px;
   }
 }
 
-
-@media screen and (max-width: 1026px) {
-  html,body {
-    font-size: 14px;
-  }
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  
 }
-/* html {
-  overflow:hidden;
-} */
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+
+@media (max-width: 650) {
+  
+}

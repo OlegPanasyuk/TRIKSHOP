@@ -1,3 +1,81 @@
 .delivery {
-    height: 100%;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Alegreya-Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  line-height: 1.5em;
+}
+
+.delivery__data {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-columns:0.4fr 0.6fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.delivery__data div, .delivery__data h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #bdbdbd;
+  margin: 0;
+}
+
+.delivery__data div {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.delivery__data h3:nth-child(5) {
+  border-bottom: unset;
+}
+
+.delivery__data div:last-child {
+  border-bottom: unset;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .delivery {
+    height: unset;
+  }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .delivery {
+    height: unset;
+  }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .delivery {
+    height: unset;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .delivery {
+    height: unset;
+  }
+}
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+
+@media (max-width: 650) {
+  .delivery {
+    height: unset;
+  }
 }

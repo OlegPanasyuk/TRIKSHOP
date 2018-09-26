@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(var(--divider-color) 10%, var(--light-primary-color) 50%);
+  font-family: 'Alegreya-Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
 }
 
 .payment__data {
@@ -13,4 +17,82 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);  
+  grid-gap: 2%;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .payment {
+    height: unset;
+  }
+
+  .payment__data {
+
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .payment {
+    height: unset;
+  }
+
+  .payment__data {
+
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+
+
+/* Landscape phones and portrait tablets */
+
+/* Landscape phones and smaller */
+@media screen and (max-width: 480px) {
+  .payment {
+    height: unset;
+  }
+
+  .payment__data {
+   
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px)  {
+  .payment {
+    height: unset;
+  }
+
+  .payment__data {
+
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
+
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+
+@media (max-width: 650) and (orientation: landscape)  {
+  .payment {
+    height: unset;
+  }
+
+  .payment__data {
+
+    display: flex;
+    flex-direction: column;
+    
+  }
 }

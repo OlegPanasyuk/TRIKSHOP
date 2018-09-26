@@ -1,3 +1,57 @@
 .us {
-  height: 100%;;
+  height: 100%;
+  font-family: 'Alegreya-Sans';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+ 
+  text-align: justify;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.us header img {
+  width: 400px;
+  height: 200px;
+}
+
+.us__text {
+  width: 80%;
+}
+
+* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .us {
+    height: unset;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .us {
+    height: unset;
+  }
+}
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+
+@media (max-width: 650) {
+
 }
