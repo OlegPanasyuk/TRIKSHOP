@@ -102,7 +102,7 @@
   .header__menu__item {
     margin: 10px 0 10px 0;
     word-wrap: none;
-    
+    width: 100%;
   }
 
   .header__menu__item a{
@@ -113,6 +113,27 @@
 
 
 @media screen and (max-width: 770px) {
+  
+}
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
   :root {
     --header-hieght: 50px;
   }
@@ -137,6 +158,7 @@
     height: auto;
     background: var(--light-primary-color);
     font-size: 1.5em;
+    border: 1px solid var(--divider-color);
   }
 
   .header__menu_closed {
@@ -144,9 +166,13 @@
   }
 
   .header__menu__item {
-    margin: 10px 0 10px 0;
+    margin:unset;
+    padding: 10px 0 10px 0;
     word-wrap: none;
     min-width: unset;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid var(--divider-color)
   }
 
   .header__menu__item a{
@@ -183,4 +209,15 @@
     font-size: 2em;
     margin: 0 0 0 10px;
   }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  
+}
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+
+@media (max-width: 650) {
+  
 }

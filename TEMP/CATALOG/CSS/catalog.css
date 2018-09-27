@@ -13,7 +13,7 @@
 .catalog__arrow {
   transition: all 0.3s ease;
   display: flex;
-  width: 6%;
+  width: 10%;
   font-size: 3em;
   color: var(--divider-color);
   align-items: center;
@@ -390,42 +390,6 @@
   color: var(--accent-color); 
 }
 
-/* @media screen and (max-width: 770px) and (orientation: portrait) {
-  .catalog__item {
-    width: 90%;
-  }
-
-  .catalog__arrow {
-    width: 10%;
-  }
-}
-
-@media screen and (max-width: 770px) and (orientation: landscape) {
-  .catalog__circles {
-    height: 1.7em;
-  }
-
-  .catalog__circle {
-    width: 1.2em;
-    height: 1.2em;
-  }
-
-  .catalog__link {
-    height: 2em;
-    font-size: 1.5em;
-  }
-
-  .catalog__models {
-    display: flex;
-    height: calc(100% - 4em);
-  }
-} */
-
-
-
-
-
-
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -523,8 +487,8 @@
   }
 
   .catalog__link {
-    height: 2em;
-    font-size: 2em;
+    height: 4em;
+    font-size: 3em;
   }
 
   .catalog__item {

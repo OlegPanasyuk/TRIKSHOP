@@ -15,17 +15,7 @@ a{
 }
 
 
-@media screen and (max-width: 770px) {
-  
-}
 
-
-@media screen and (max-width: 1026px) {
- 
-}
-@media (min-width: 1200px) {
-
-}
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -36,7 +26,9 @@ a{
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
-  
+  html,body {
+    font-size: 12px;
+  }
 }
 
 /* Landscape phones and portrait tablets */
@@ -48,7 +40,9 @@ a{
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-  
+  html,body {
+    font-size: 11px;
+  }
 }
 
 /* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
