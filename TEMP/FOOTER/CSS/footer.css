@@ -2,12 +2,14 @@
   background: var(--dark-primary-color);
   height: 12em;
   width:100%;
+  height: auto;
   color: var(--divider-color);
-  display: none;
+  display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-right: 2em;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .footer__menu ul {
@@ -54,3 +56,82 @@
 .footer__unp {
   margin-right: 3em;
 }
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+ 
+}
+
+@media (max-width: 650px) {
+  .footer__empty {
+    display: none;
+  }
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 14em;
+  }
+  .footer__menu {
+    grid-row: span 2 / auto;
+  }
+  .footer__social {
+    grid-row: span 2 / auto;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    height: 14em;
+  }
+  .footer__menu {
+    grid-row: 1 / auto;
+  }
+  .footer__social {
+    padding-left: 40px; 
+    grid-row: 2 / auto;
+  }
+
+  .footer__social a {
+    margin-right: 0.5em;
+  }
+
+  .footer__social {
+    justify-content: center;
+    width: 2em;
+    margin-right: unset;
+  }
+  .footer__contacts {
+    margin-right: unset;
+  }
+  .footer__bankrec {
+    margin-right: unset;
+  }
+
+  .footer__unp {
+    margin-right: unset;
+  }
+
+
+}
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+

@@ -68,10 +68,11 @@
 
 .header__social {
   display: flex;
-  width: 4em;
+  width: 2.5em;
   align-items: center;
   justify-content: space-between;
   font-size: 2.5em;
+  margin-left: 0.2em;
 }
 
 .header__social a {
@@ -94,7 +95,14 @@
   display: none;
 
 }
-@media screen and (max-width: 1026px) {
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1240px) {
   .header__menu {
     font-size: 1.2em;
     margin-right: 10px;
@@ -111,25 +119,22 @@
   }
 }
 
-
-@media screen and (max-width: 770px) {
-  
-}
-
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Portrait tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-  
-}
-
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
- 
+  .header__menu {
+    font-size: 1.2em;
+    margin-right: 10px;
+  }
+  .header__menu__item {
+    margin: 10px 0 10px 0;
+    word-wrap: none;
+    width: 100%;
+  }
+
+  .header__menu__item a{
+    margin: 0;
+    padding: 10;
+  }
 }
 
 /* Landscape phones and portrait tablets */

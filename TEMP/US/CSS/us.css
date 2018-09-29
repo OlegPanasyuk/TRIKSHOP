@@ -21,7 +21,7 @@
   width: 80%;
 }
 
-* Large desktops and laptops */
+/* Large desktops and laptops */
 @media (min-width: 1200px) {
 
 }
@@ -38,16 +38,12 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
-  .us {
-    height: unset;
-  }
+ 
 }
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-  .us {
-    height: unset;
-  }
+  
 }
 
 /* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */

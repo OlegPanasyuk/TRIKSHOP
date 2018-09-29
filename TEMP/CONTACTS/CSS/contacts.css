@@ -1,3 +1,105 @@
 .contacts{
-  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  font-size: 2.5em;
+  height: 250px;
+  
 }
+
+.contacts__wrapper {
+  width:80%;
+  height: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__numbers {
+  align-items: center;
+  display: flex;
+}
+
+.contacts__social {
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  
+  display: flex;
+  color: var(--text-primary-color);
+}
+
+.contacts__social a{
+  color: var(--text-primary-color);
+}
+
+.contacts__social a:hover {
+  color: var(--accent-color);
+}
+
+.contacts__social a:first-child {
+  margin-right: 2em;
+}
+
+.contacts__social a:visited {
+  color: var(--text-primary-color); 
+}
+
+.contacts__social i {
+  font-size: 3em;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Portrait tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 650px) {
+  .contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    font-size: 2.5em;
+    height: 300px;
+    
+  }
+  
+  .contacts__wrapper {
+    width:80%;
+    height: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+    .contacts{
+      font-size: 2em;
+    }
+}
+
+/* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
+

@@ -13,12 +13,23 @@
 
 .payment__data {
   width: 80%;
+  max-width: 900px;
   height: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);  
   grid-gap: 2%;
 }
+
+.payment__data p {
+  align-content: center;
+  text-align: center;
+}
+.payment__data img{
+  width: 300px;
+  height: auto;
+}
+
 
 /* Large desktops and laptops */
 @media (min-width: 1200px) {
@@ -66,6 +77,12 @@
     display: inline-flex;
     flex-wrap: wrap;
   }
+
+  .payment__data img{
+    width: 250px;
+    height: auto;
+  }
+  
 }
 
 @media screen and (max-width: 767px)  {
