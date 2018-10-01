@@ -22,11 +22,16 @@
   font-family: 'Alegreya-Sans-Black';
   font-weight: normal;
   font-style: normal;
-  font-size: 32px;
+  font-size: 1em;
   align-items: center;
   color: var(--accent-color);
   width: 200px;
   justify-content: center;
+}
+
+.header__logo img {
+  width: 80%;
+  height: auto;
 }
 
 .header__empty-element {

@@ -6,7 +6,6 @@ var obj = {
   step: 3,
   init_step_catalog: function () {
     if (device.mobile()) {
-      console.log('mobile');
       if(device.portrait()) {
        this.step = 1;
         console.log('portait');
@@ -29,30 +28,58 @@ var obj = {
       }
       
     }
+  },
+  init_circles : function() {
+    
+    let catalog__circles__wrap = document.querySelector('.catalog__circles__wrap');
+    let items = document.querySelectorAll('.catalog__item');
+    catalog__circles__wrap.innerHTML = '';
+    const size = Math.trunc(items.length / this.step);
+    let arr = new Array(size);
+    arr.fill(0);
+    arr.forEach(function(el ,i) {
+      let div = document.createElement('div');
+      div.classList.add('catalog__circle');
+      if (i === 0) {
+        div.classList.add('catalog__circle__selected');
+      }
+      catalog__circles__wrap.appendChild(div);
+    });
   }
 }
 
 obj.init_step_catalog();
+obj.init_circles();
 buttons();
+init_pages();
 init_slider();
 
-// function init_step_catalog() {
-//   if ((device.mobile()) && (device.portrait())) {
-//     obj.step = 1;
-//   }
-//   if (device.tablet()) {
-//     console.log('tablet');
-//     if(device.portrait()) {
-//       obj.step = 1;
-//       console.log('portait');
-//     }
-//     if((device.landscape())) {
-//       obj.step = 3;
-//       console.log('landscape');
-//     }
+
+function init_pages() {
+  let items = document.querySelectorAll('.catalog__item__page');
+  items.forEach(function(el, i) {
+    if (el == el.parentNode.childNodes[1]) {
+      el.firstChild.classList.add('catalog__item__page__control__hover');
+      
+    } 
     
-//   }
-// }
+    el.addEventListener('mouseover', function(event) {
+      if (event.target === el) {
+        event.target.firstChild.classList.add('catalog__item__page__control__hover'); 
+      } else if(event.target.classList.contains('catalog__item__page__control')) {
+        event.target.classList.add('catalog__item__page__control__hover'); 
+      }
+      //console.log(event.target.firstChild);
+    });
+    el.addEventListener('mouseout', function(event) {
+      if (event.target === el) {
+        event.target.firstChild.classList.remove('catalog__item__page__control__hover'); 
+      } else if(event.target.classList.contains('catalog__item__page__control')) {
+        event.target.classList.remove('catalog__item__page__control__hover'); 
+      }
+    });
+  });
+}
 
 function buttons() {
   let left_but = document.querySelector('.catalog__arrow_left');
@@ -111,6 +138,7 @@ function move_left() {
 
   window.addEventListener("orientationchange", function(event) {
     obj.init_step_catalog();
+    obj.init_circles();
     var originalBodyStyle = getComputedStyle(document.body).getPropertyValue('display');
     
     setTimeout(function () {
