@@ -4,12 +4,19 @@
   width:100%;
   height: auto;
   color: var(--divider-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-right: 2em;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .footer__menu ul {
@@ -25,15 +32,23 @@
 }
 
 .footer__empty {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin-right: 2em;
 }
 
 .footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 4em;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 2.5em;
   margin-right: 2em;
 }
@@ -82,14 +97,19 @@
     display: none;
   }
   .footer {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     height: 14em;
+    grid-column-gap: 5px;
   }
   .footer__menu {
+    -ms-grid-row-span: 2;
     grid-row: span 2 / auto;
   }
   .footer__social {
+    -ms-grid-row-span: 2;
     grid-row: span 2 / auto;
   }
 }
@@ -97,10 +117,14 @@
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
   .footer {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     height: 14em;
+    grid-column-gap: 5px;
   }
   .footer__menu {
     grid-row: 1 / auto;
@@ -115,7 +139,9 @@
   }
 
   .footer__social {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 2em;
     margin-right: unset;
   }
@@ -134,4 +160,3 @@
 }
 
 /* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
-
