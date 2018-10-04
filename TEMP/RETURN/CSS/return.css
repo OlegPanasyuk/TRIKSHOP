@@ -30,6 +30,10 @@
   color: var(--accent-color);
 }
 
+.return__text ul {
+  list-style-type: disc;
+}
+
 
 
 /* Large desktops and laptops */
@@ -54,7 +58,10 @@
 
 /* Landscape phones and smaller */
 @media (max-width: 480px) {
-  
+  .return {
+    height: unset;
+    margin-bottom: 1em;
+  }
 }
 
 /* По надобности дописую промежуточные разрешения, если вдруг по дизайну что то падает на 650px, тогда дописую: */
