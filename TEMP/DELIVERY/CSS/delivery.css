@@ -9,11 +9,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  flex-direction: column;
   font-family: 'Alegreya-Sans';
   font-weight: normal;
   font-style: normal;
   font-size: 1.2em;
   line-height: 1.5em;
+  margin-top: 10px;
 }
 
 .delivery__data {
@@ -62,6 +64,10 @@
 
 .delivery__data div:last-child {
   border-bottom: unset;
+}
+
+.delivery .empty__fixed__block {
+  height: var(--header-hieght);
 }
 
 /* Large desktops and laptops */

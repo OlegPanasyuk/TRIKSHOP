@@ -15,7 +15,9 @@ a{
 }
 
 
-
+.empty__fixed__block {
+  height: var(--header-hieght);
+}
 
 /* Portrait tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {

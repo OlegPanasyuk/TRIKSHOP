@@ -6,7 +6,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: fixed;
   height: var(--header-hieght);
   width: 100%;
   font-family: 'Alegreya-Sans';
