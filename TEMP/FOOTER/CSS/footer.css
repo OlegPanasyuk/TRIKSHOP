@@ -17,6 +17,7 @@
           box-sizing: border-box;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      position: relative;
 }
 
 .footer__menu ul {
